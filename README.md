@@ -13,8 +13,8 @@
     └── scale.py
 
 ## ToDo List
--[] connect to google api
--[ ] scale model
+- [ ] connect to google api
+- [ ] scale model
 - [ ] motor model
 - [ ] monthly, weekly report(with nutrition calculate)
 - [ ] design outward of feeder
