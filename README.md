@@ -13,9 +13,9 @@
     └── scale.py
 
 ## ToDo List
-- [] connect to google api
-- [] scale model
-- [] motor model
-- [] monthly, weekly report(with nutrition calculate)
-- [] design outward of feeder
-- [] linebot, line nofity with UI 
+-[] connect to google api
+-[ ] scale model
+- [ ] motor model
+- [ ] monthly, weekly report(with nutrition calculate)
+- [ ] design outward of feeder
+- [ ] linebot, line nofity with UI 
