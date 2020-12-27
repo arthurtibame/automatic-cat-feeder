@@ -1,4 +1,4 @@
-# Automatic cat feeder (updated on 12/26/2020)
+# Automatic cat feeder (updated on 12/27/2020)
 
 ## Structure of framework
 ```cmd
@@ -14,6 +14,7 @@
 ```
 ---
 ## ToDo List
+- [x] enable to use the scale
 - [ ] connect to google api
 - [ ] scale model
 - [ ] motor model
