@@ -3,7 +3,8 @@ import time
  
 CONTROL_PIN = 18
 PWM_FREQ = 50
-STEP=15
+
+STEP=90
  
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(CONTROL_PIN, GPIO.OUT)
@@ -18,18 +19,36 @@ def angle_to_duty_cycle(angle=0):
 try:
     print('按下 Ctrl-C 可停止程式')
     for angle in range(0, 181, STEP):
+        print(angle)
         dc = angle_to_duty_cycle(angle)
+        print(dc)
         pwm.ChangeDutyCycle(dc)
         print('角度={: >3}, 工作週期={:.2f}'.format(angle, dc))
         time.sleep(2)
-    for angle in range(180, -1, -STEP):
-        dc = angle_to_duty_cycle(angle)
-        print('角度={: >3}, 工作週期={:.2f}'.format(angle, dc))
-        pwm.ChangeDutyCycle(dc)
-        time.sleep(2)
-    pwm.ChangeDutyCycle(angle_to_duty_cycle(90))
-    while True:
-        next
+    print("reverse")    
+#    for angle in range(180, -1, -STEP):
+#        dc = angle_to_duty_cycle(angle)
+#        print('角度={: >3}, 工作週期={:.2f}'.format(angle, dc))
+#        pwm.ChangeDutyCycle(dc)
+#        time.sleep(2)
+        
+#    for angle in range(0, 181, STEP):
+#        dc = angle_to_duty_cycle(angle)
+#        pwm.ChangeDutyCycle(dc)
+#        print('角度={: >3}, 工作週期={:.2f}'.format(angle, dc))
+#        time.sleep(2)    
+
+#pwm.ChangeDutyCycle(2.5)
+    
+    pwm.ChangeDutyCycle(2.5)
+    print(2.5)
+    time.sleep(2)
+    pwm.ChangeDutyCycle(12.0)
+    print(12.0)
+    time.sleep(2)
+    pwm.ChangeDutyCycle(2.5)
+    print(2.5)
+
 except KeyboardInterrupt:
     print('關閉程式')
 finally:
