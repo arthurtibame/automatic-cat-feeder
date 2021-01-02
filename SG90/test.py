@@ -1,14 +1,11 @@
 import RPi.GPIO as GPIO
 import time
- 
+
 CONTROL_PIN = 18
 PWM_FREQ = 50
-
-STEP=90
- 
+STEP=90 
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(CONTROL_PIN, GPIO.OUT)
- 
+GPIO.setup(CONTROL_PIN, GPIO.OUT) 
 pwm = GPIO.PWM(CONTROL_PIN, PWM_FREQ)
 pwm.start(0)
  
