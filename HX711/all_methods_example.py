@@ -11,7 +11,7 @@ try:
     # If you do not pass any argument 'set_channel' then the default value is 'A'
     # you can set a gain for channel A even though you want to currently select channel B
     hx = HX711(
-        dout_pin=5, pd_sck_pin=6, gain_channel_A=128, select_channel='B')
+        dout_pin=24, pd_sck_pin=23, gain_channel_A=128, select_channel='B')
 
     err = hx.reset()  # Before we start, reset the hx711 ( not necessary)
     if err:  # you can check if the reset was successful

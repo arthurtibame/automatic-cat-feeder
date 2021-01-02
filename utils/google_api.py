@@ -5,7 +5,7 @@ import gspread
 import settings
 
 class GoogleApi(object):
-    def __init__(self, cat_name, weight, data_type="add_cat_feed") -> None:
+    def __init__(self, weight, data_type="add_cat_feed") -> None:
         now=datetime.now().strftime("%Y-%m-%d %H:%M:%S")        
         # google sheet column here 
         self.hostname=gethostname()
