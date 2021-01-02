@@ -15,7 +15,7 @@
 ---
 ## ToDo List
 - [x] enable to use the scale
-- [ ] connect to google api
+- [x] connect to google api
 - [ ] scale model
 - [ ] motor model
 - [ ] monthly, weekly report(with nutrition calculate)
