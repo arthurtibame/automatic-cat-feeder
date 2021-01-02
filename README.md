@@ -1,4 +1,4 @@
-# Automatic cat feeder (updated on 12/27/2020)
+# Automatic cat feeder (updated on 02/01/2021)
 
 ## Structure of framework
 ```cmd
